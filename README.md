@@ -41,11 +41,9 @@ Small copper/aluminium ground plane underneath
 15–20 cm minimum from ESC and battery cables if possible
 Cable routed away from power wiring
 
-############################################################
-
+____________________________________________________________
 Efoil logger wifi (can be changed in code lines 40 and 41) :
-
-############################################################
+____________________________________________________________
 SSID : eFoilLogger
 Password : efoillogger
 
