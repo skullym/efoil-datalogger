@@ -76,12 +76,14 @@ Small copper/aluminium ground plane underneath
 Cable routed away from power wiring
 
 
-____________________________________________________________
-EFOIL DATA LOGGER WIFI (can be changed in code lines 40 and 41) :
-____________________________________________________________
+_____________________________________________________________________
+DATA LOGGER WIFI INTERFACE :
+_____________________________________________________________________
 SSID : eFoilLogger
 
 Password : efoillogger
+
+Can be changed in code lines 40 and 41
 
 __________________________________________________________
 FUNCTIONALITY :
