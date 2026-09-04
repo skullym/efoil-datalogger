@@ -1,6 +1,6 @@
 # efoil-datalogger
 VESC based efoil data logger design by Mike Schulster
-#######################################################################################3
+#######################################################################################
 
 Data logger design specs :
 Microcontroller : ESP32 Dev Module 38-pin
@@ -45,6 +45,7 @@ ____________________________________________________________
 Efoil logger wifi (can be changed in code lines 40 and 41) :
 ____________________________________________________________
 SSID : eFoilLogger
+
 Password : efoillogger
 
 Functionality :
