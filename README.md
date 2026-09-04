@@ -2,7 +2,7 @@
 VESC based efoil data logger design by Mike Schulster
 #######################################################################################
 
-Data logger design specs :
+DATA LOGGER DESIGN SPECS :
 _________________________________________
 Microcontroller : ESP32 Dev Module 38-pin
 
@@ -13,7 +13,7 @@ GNSS : SAM-M10Q GNSS antenna module receiver from GNSS.store
 Power : 5V from Vesc
 
 
-Comms Architecture :
+COMMS ARCHITECTURE :
 _______________________________
 Throttle : PPM from VESC  
 
