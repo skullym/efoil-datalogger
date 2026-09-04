@@ -42,7 +42,9 @@ Small copper/aluminium ground plane underneath
 Cable routed away from power wiring
 
 ############################################################
+
 Efoil logger wifi (can be changed in code lines 40 and 41) :
+
 ############################################################
 SSID : eFoilLogger
 Password : efoillogger
