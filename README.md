@@ -3,25 +3,33 @@ VESC based efoil data logger design by Mike Schulster
 #######################################################################################
 
 Data logger design specs :
-
+_________________________________________
 Microcontroller : ESP32 Dev Module 38-pin
-Storage : MicroSD module and 8GB card
+
+Storage : MicroSD module and 8GB card/
 GNSS : SAM-M10Q GNSS antenna module receiver from GNSS.store
 Power : 5V from Vesc
 
 Comms Architecture :
+_______________________________
+Throttle : PPM from VESC  
 
-Throttle : PPM from VESC
 VESC telemetry : UART 1 (COMM port)
+
 GNSS : ESP32 UART 2
+
 SD card : SPI
 
 Wiring :
-
+_______________________________
 VESC UART1 TX  →  ESP32 GPIO16
+
 VESC UART1 RX  ←  ESP32 GPIO17
+
 GPS TX         →  ESP32 GPIO16  [use UART2]
+
 GPS RX         ←  ESP32 GPIO17
+
 SD CS/MOSI/MISO/CLK → GPIO 15/23/19/18
 
 Output Format :
