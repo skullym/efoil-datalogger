@@ -13,7 +13,7 @@ GNSS : SAM-M10Q GNSS antenna module receiver from GNSS.store
 Power : 5V from Vesc
 
 
-
+________________________________
 COMMS ARCHITECTURE :
 _______________________________
 Throttle : PPM from VESC  
@@ -24,7 +24,7 @@ GNSS : ESP32 UART 2
 
 SD card : SPI
 
-
+_______________________________
 WIRING:
 _______________________________
 VESC UART1 TX  →  ESP32 GPIO16
@@ -37,7 +37,7 @@ GPS RX         ←  ESP32 GPIO17
 
 SD CS/MOSI/MISO/CLK → GPIO 15/23/19/18
 
-
+_______________________________________
 OUTPUT FORMAT :
 _______________________________________
 Native VESC Tool CSV format
@@ -48,13 +48,13 @@ One file per ride, named by GPS date/time
 
 ~5 Hz sample rate
 
-
+___________________________________________
 KEY LOGGED CHANNELS :
 ___________________________________________
 VESC: voltage, motor current, input current, ERPM, duty cycle, watt-hours, FET temp, motor temp (via NTC) GPS: lat, lon, ground speed, altitude, time
 
 
-
+___________________________________________________
 RIDE DETECTION:
 ___________________________________________________
 Auto-start: GPS speed >1 m/s or ERPM above threshold
@@ -64,7 +64,7 @@ Auto-stop: 30s idle timeout
 Clean file close on stop
 
 
-
+____________________________________________________
 ANTENNA INSTALLATION :
 ____________________________________________________
 Mounted flat, ceramic face up,
@@ -83,7 +83,7 @@ SSID : eFoilLogger
 
 Password : efoillogger
 
-
+__________________________________________________________
 FUNCTIONALITY :
 __________________________________________________________
 The logger has auto start-stop functionality built in - 
