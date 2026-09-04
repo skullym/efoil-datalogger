@@ -6,9 +6,12 @@ Data logger design specs :
 _________________________________________
 Microcontroller : ESP32 Dev Module 38-pin
 
-Storage : MicroSD module and 8GB card/
+Storage : MicroSD module and 8GB card
+
 GNSS : SAM-M10Q GNSS antenna module receiver from GNSS.store
+
 Power : 5V from Vesc
+
 
 Comms Architecture :
 _______________________________
@@ -19,6 +22,7 @@ VESC telemetry : UART 1 (COMM port)
 GNSS : ESP32 UART 2
 
 SD card : SPI
+
 
 Wiring :
 _______________________________
@@ -32,28 +36,37 @@ GPS RX         ←  ESP32 GPIO17
 
 SD CS/MOSI/MISO/CLK → GPIO 15/23/19/18
 
-Output Format :
 
+Output Format :
+_______________________________________
 Native VESC Tool CSV format
+
 Exact header row from real VESC logs
+
 One file per ride, named by GPS date/time
+
 ~5 Hz sample rate
 
 Key Logged Channels :
-
+___________________________________________
 VESC: voltage, motor current, input current, ERPM, duty cycle, watt-hours, FET temp, motor temp (via NTC) GPS: lat, lon, ground speed, altitude, time
 
 Ride Detection :
-
+___________________________________________________
 Auto-start: GPS speed >1 m/s or ERPM above threshold
+
 Auto-stop: 30s idle timeout
+
 Clean file close on stop
 
 Antenna Installation :
-
+____________________________________________________
 Mounted flat, ceramic face up,
+
 Small copper/aluminium ground plane underneath
+
 15–20 cm minimum from ESC and battery cables if possible
+
 Cable routed away from power wiring
 
 ____________________________________________________________
