@@ -51,7 +51,9 @@ Password : efoillogger
 Functionality :
 
 The logger has auto start-stop functionality built in - 
-AUTO START : GNSS speed > 1.0 m/s for 3 seconds OR VESC data is recent AND abs(ERPM) > 300 for 3 seconds (can be changed on lines 63-64) 
+
+AUTO START : GNSS speed > 1.0 m/s for 3 seconds OR VESC data is recent AND abs(ERPM) > 300 for 3 seconds (can be changed on lines 63-64)
+
 AUTO STOP :  no recent VESC data OR abs(ERPM) < 200 AND abs(input current) < 1.0 A OR GNSS speed < 0.7 m/s for at least 54 of the last 60 one-second samples (can be changed on lines 65-71) 
 
 
